@@ -79,7 +79,6 @@ function handleClickEvent(e) {
   var result = calculateWeight(userWeight, planetName);
   $('#output').text('If you were on ' + planetName + ',' + ' you would weigh ' + result + 'lbs!');
 
-}
 
 $('#calculate-button').click(handleClickEvent);
 
