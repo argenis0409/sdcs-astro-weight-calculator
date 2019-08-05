@@ -70,7 +70,7 @@ function addNewPlanet() {
 
 function handleClickEvent(e) {
   var userWeight = $('#user-weight').val();
-  if (userWeight == '') {
+  if (userWeight == '') 
     alert('please type weight');
     return false;
   }
