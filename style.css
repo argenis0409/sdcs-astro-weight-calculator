@@ -1,0 +1,20 @@
+body {
+    background-color: rgba(0, 0, 0, 0.267);
+    padding-top: 24px;
+  }
+
+  #calculate-button {
+    margin-top: 25px
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    text-align: center;
+  }
+
+  #addPlanet {
+    margin-top: 25px
+  }
+  

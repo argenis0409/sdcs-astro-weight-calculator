@@ -12,6 +12,8 @@ var planets = [
   ['Sun', 27.9]
 ];
 
+
+
 var planetsArr = planets.reverse();
 
 planetsArr.forEach(function (planet) {
@@ -67,18 +69,17 @@ function addNewPlanet() {
   document.getElementById('newMultiplier').value = '';
 }
 
+  
+  function handleClickEvent(e) {
+    var userWeight = document.getElementById("user-weight").value;
+    var planet = document.getElementById("planets").value;
 
-function handleClickEvent(e) {
-  var userWeight = $('#user-weight').val();
-  if (userWeight == '') 
-    alert('please type weight');
-    return false;
-  }
+    if (userWeight == '') {
+      alert('please type weight');
+      return false;
+     }
 
-  var planetName = $('#planets').val();
-  var result = calculateWeight(userWeight, planetName);
-  $('#output').text('If you were on ' + planetName + ',' + ' you would weigh ' + result + 'lbs!');
+    document.getElementById("output").innerHTML = `If you were on ${planet}, you would weigh ${calculateWeight(userWeight, planet)}lbs!`;
+}
 
-
-$('#calculate-button').click(handleClickEvent);
-
+document.getElementById("calculate-button").onclick=handleClickEvent;
