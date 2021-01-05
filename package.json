@@ -10,7 +10,7 @@
         "npm": "6.9.0"
     },
     "dependencies": {
-        "axios": "^0.16.2",
+        "axios": "^0.21.1",
         "chai": "^4.0.2",
         "express": "^4.15.3",
         "jquery": "^3.4.1",
